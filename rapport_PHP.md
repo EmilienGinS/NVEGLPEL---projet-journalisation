@@ -17,4 +17,8 @@ L’objectif principal du projet est de concevoir, développer et déployer un s
 
 ### Fonctions principales 
 
+Le Dashboard du système de journalisation permet :
+-- de nous retourner le nombre de logs générés par jour
+-- le type de logs générés
+
 ### Critères de performances
