@@ -13,7 +13,11 @@ Ce dernier va nous permettre de centraliser tous les logs générés par notre a
 
 ### Objectif du projet
 
+<<<<<<< HEAD
 Nous devons réussir à stocker nos logs dans un système de journalisation.
+=======
+L’objectif principal du projet est de concevoir, développer et déployer un système de journalisation robuste, sécurisé et conforme aux bonnes pratiques.
+>>>>>>> 58b39bf1558a428dacf5765e706883ffa27faeab
 
 ### Fonctions principales 
 
