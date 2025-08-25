@@ -12,6 +12,8 @@ Ce dernier va nous permettre de centraliser tous les logs générés par notre a
 
 ### Objectif du projet
 
+L’objectif principal du projet est de concevoir, développer et déployer un système de journalisation robuste, sécurisé et conforme aux bonnes pratiques.
+
 ### Fonctions principales 
 
 ### Critères de performances
