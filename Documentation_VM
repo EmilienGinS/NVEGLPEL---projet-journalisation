@@ -1,0 +1,36 @@
+# Procédure de création d’une machine virtuelle Ubuntu
+
+## 1. Pré-requisc
+- Un hyperviseur installé (ex : VirtualBox, VMware Workstation ...).
+- Image ISO d’Ubuntu.
+- Ressources matérielles disponibles :
+  - RAM : minimum 2 Go .
+  - Processeur : 2 cœurs ou plus.
+  - Disque dur : minimum 20 Go .
+
+---
+
+## 2. Création de la VM
+1. Ouvrir l’hyperviseur et cliquer sur **Créer une nouvelle machine virtuelle**.
+2. Nommer la VM .
+3. Associer l’ISO d’Ubuntu en tant que lecteur CD/DVD virtuel.
+
+---
+
+## 3. Installation d’Ubuntu
+1. Démarrer la machine virtuelle.
+2. Au menu de démarrage, sélectionner **Installer Ubuntu**.
+3. Choisir la langue d’installation.
+4. Sélectionner la disposition du clavier.
+5. Choisir le mode d’installation **Normal**.
+6. Configuration du disque :
+   - Utiliser le disque entier.
+7. Créer l’utilisateur administrateur :
+   - Nom complet.
+   - Nom de machine.
+   - Nom d’utilisateur.
+   - Mot de passe.
+8. Lancer l’installation et attendre la fin du processus.
+9. Redémarrer la VM.
+
+---
