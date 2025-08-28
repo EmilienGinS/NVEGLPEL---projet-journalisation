@@ -137,13 +137,11 @@ Dans le doute, vous pouvez cliquer sur le bouton "Accueil" présent en haut à g
 
 Pour trier les logs par équipement, vous avec une liste déroulante présente à gauche du bouton "Rafraîchir". 
 Dans cette liste déroulante, sélectionner l'équipement que vous souhaitez choisir.
-Pensez à cliquer sur le bouton "Rafraîchir" pour que votre filtre soit pris en compte.
 
 ###### Trier les logs par catégorie (information / erreur)
 
 Pour trier les logs par catégorie, vous avec une liste déroulante présente à gauche du bouton "Rafraîchir". 
 Dans cette liste déroulante, sélectionner la catégorie que vous souhaitez choisir.
-Pensez à cliquer sur le bouton "Rafraîchir" pour que votre filtre soit pris en compte.
 
 ###### Gérer les utilisateurs
 
