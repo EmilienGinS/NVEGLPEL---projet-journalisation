@@ -119,33 +119,33 @@ Liste des tâches (par livrable / réparti par étudiant):
 
 ### Documentation utilisateur 
 
-- Se connecter
+# Se connecter
 
 Pour se connecter au Dashboard, il vous suffit de renseigner cette URL : http://172.16.4.68/auth
 Il faudra remplir les champs Email et Mot de passe avec les informations fournies par votre administrateur.
 
 Une fois les champs remplit, cliquer sur le bouton "Se connecter".
 
-- Consulter tous les logs
+# Consulter tous les logs
 
 Pour accéder au Dashboard et consulter tous les logs (information et erreur), il vous suffit de vous connecter.
 Le Dashboard avec tous les logs est la page d'accueil.
 
 Dans le doute, vous pouvez cliquer sur le bouton "Accueil" présent en haut à gauche.
 
-- Trier les logs par équipement
+# Trier les logs par équipement
 
 Pour trier les logs par équipement, vous avec une liste déroulante présente à gauche du bouton "Rafraîchir". 
 Dans cette liste déroulante, sélectionner l'équipement que vous souhaitez choisir.
 Pensez à cliquer sur le bouton "Rafraîchir" pour que votre filtre soit pris en compte.
 
-- Trier les logs par catégorie (information / erreur)
+# Trier les logs par catégorie (information / erreur)
 
 Pour trier les logs par catégorie, vous avec une liste déroulante présente à gauche du bouton "Rafraîchir". 
 Dans cette liste déroulante, sélectionner la catégorie que vous souhaitez choisir.
 Pensez à cliquer sur le bouton "Rafraîchir" pour que votre filtre soit pris en compte.
 
-- Gérer les utilisateurs
+# Gérer les utilisateurs
 
 Seuls les comptes ayant le droit "Administrateur" peut gérer les utilisateurs.
 
