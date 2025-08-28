@@ -1,18 +1,18 @@
 # Procédure de création d’une machine virtuelle Ubuntu
 
-## 1. Pré-requisc
+## 1. Pré-requis
 - Un hyperviseur installé (ex : VirtualBox, VMware Workstation ...).
 - Image ISO d’Ubuntu.
 - Ressources matérielles disponibles :
-  - RAM : minimum 2 Go .
-  - Processeur : 2 cœurs ou plus.
-  - Disque dur : minimum 20 Go .
+  - RAM : minimum 2 Go
+  - Processeur : 2 cœurs ou plus
+  - Disque dur : minimum 20 Go
 
 ---
 
 ## 2. Création de la VM
 1. Ouvrir l’hyperviseur et cliquer sur **Créer une nouvelle machine virtuelle**.
-2. Nommer la VM .
+2. Nommer la VM.
 3. Associer l’ISO d’Ubuntu en tant que lecteur CD/DVD virtuel.
 
 ---
@@ -26,11 +26,94 @@
 6. Configuration du disque :
    - Utiliser le disque entier.
 7. Créer l’utilisateur administrateur :
-   - Nom complet.
-   - Nom de machine.
-   - Nom d’utilisateur.
-   - Mot de passe.
+   - Nom complet
+   - Nom de machine
+   - Nom d’utilisateur
+   - Mot de passe
 8. Lancer l’installation et attendre la fin du processus.
 9. Redémarrer la VM.
 
 ---
+
+# Configuration réseau et installation d’Apache sur Ubuntu
+
+## 1. Configuration réseau
+
+### Éditer la configuration Netplan :
+```bash
+sudo nano /etc/netplan/01-netcfg.yaml
+```
+
+### Exemple de configuration d’une IP statique :
+```yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s3:
+      dhcp4: no
+      addresses:
+        - 172.16.4.68/24
+      routes:
+        - to: default
+          via: 172.16.4.1
+      nameservers:
+        addresses: [8.8.8.8, 1.1.1.1]
+```
+
+### Appliquer la configuration :
+```bash
+sudo netplan apply
+```
+
+### Vérifier la connectivité :
+```bash
+ip a
+ping 8.8.8.8
+```
+
+---
+
+## 2. Installation d’Apache
+
+### Mettre à jour le système :
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+### Installer Apache :
+```bash
+sudo apt install apache2 -y
+```
+
+### Vérifier qu’Apache est actif :
+```bash
+sudo systemctl status apache2
+```
+Le service doit être **active (running)**
+
+### Tester dans un navigateur :
+- Depuis la VM : [http://127.0.0.1](http://127.0.0.1)  
+- Depuis un poste du réseau : [http://172.16.4.68](http://172.16.4.68)  
+
+---
+
+## 3. Déploiement d’un site dans `/var/www/dashboard`
+
+### Créer le répertoire du site :
+```bash
+sudo mkdir -p /var/www/dashboard
+sudo chown -R $USER:$USER /var/www/dashboard
+```
+
+### Créer une page de test :
+```bash
+echo "<h1>Hello there</h1>" > /var/www/dashboard/index.html
+```
+
+### Activer le site :
+```bash
+sudo a2ensite dashboard.conf
+sudo a2dissite 000-default.conf
+sudo systemctl reload apache2
+```
