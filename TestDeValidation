@@ -1,0 +1,8 @@
+## Tests de validation basés sur les cas d'utilisation
+
+| Cas d’utilisation                          | État initial                                          | Action                                   | Résultat attendu                                      | Résultat obtenu |
+|--------------------------------------------|------------------------------------------------------|------------------------------------------|-------------------------------------------------------|-----------------|
+| Vérifier la connectivité réseau             | La VM est démarrée et connectée au réseau            | ping 8.8.8.8 depuis la VM              | Réception de réponses avec un temps de latence normal |                 |
+| Vérifier accès IP de la VM depuis le poste | La VM a une IP statique (172.16.4.68)                | ping 172.16.4.68 depuis le poste client | Réception de réponses                                 |                 |
+| Vérifier qu’Apache est accessible en réseau | Apache est actif, VM accessible depuis le LAN        | Ouvrir http://172.16.4.68 depuis client | Affichage de la page par défaut Apache                |                 |
+| Vérifier le déploiement du site             | Le dossier /var/www/dashboard contient index.html | Ouvrir http://172.16.4.68 dans le navigateur | Affichage du texte Hello There |                 |

@@ -37,7 +37,7 @@
 
 # Configuration réseau et installation d’Apache sur Ubuntu
 
-## 1. Configuration réseau (IP statique)
+## 1. Configuration réseau
 
 ### Éditer la configuration Netplan :
 ```bash
@@ -90,7 +90,7 @@ sudo apt install apache2 -y
 ```bash
 sudo systemctl status apache2
 ```
-➡️ Le service doit être **active (running)**
+Le service doit être **active (running)**
 
 ### Tester dans un navigateur :
 - Depuis la VM : [http://127.0.0.1](http://127.0.0.1)  
