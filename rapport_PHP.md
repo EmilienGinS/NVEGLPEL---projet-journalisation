@@ -23,8 +23,9 @@ L'objectif du projet est de **centraliser les journaux** et de mettre en place u
 ### Fonctions principales 
 
 Le Dashboard du système de journalisation permet :
-- de nous retourner le nombre de logs générés par jour
-- le type de logs générés
+- de nous retourner les derniers logs générés par les instruments
+- de retourner uniquement les logs d'une catégorie
+- de trier les logs par instruments
 
 ### Critères de performances
 
