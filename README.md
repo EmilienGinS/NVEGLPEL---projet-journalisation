@@ -1,3 +1,7 @@
 # NVEGLPEL---projet-journalisation
-oui.
-non.
+
+Membres du projet :
+- Laura PELET
+- Natgan VAZILLE
+- Evariste LOURD
+- Emilien GINEYS
