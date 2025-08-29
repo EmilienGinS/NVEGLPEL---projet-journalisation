@@ -154,3 +154,8 @@ Une fois arrivé sur la page de gestion des utilisateurs, vous pouvez :
  - Ajouter des utilisateurs
  - Modifier les informations des utilisateurs
  - Supprimer des utilisateurs
+
+
+## Analyse du code php
+
+On a utilisé PHPStan pour analyser le code du dashboard. Les deux erreurs venaient du fait que les variables $Session et $events étaient utilisées sans avoir été déclarées dans les classes. Pour corriger, on a simplement ajouté ces variables dans les classes afin que le code soit plus clair et reconnu correctement phpstan.
